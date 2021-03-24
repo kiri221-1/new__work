@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Mulish', sans-serif;
   color: #333333;
   background-color: #F5FAFE;
 }
@@ -519,6 +519,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-bottom: 20px;
 }
 
 .hotel-info__offer {
@@ -557,6 +558,7 @@ template {
 }
 
 .stars {
+  height: 8px;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
 }
@@ -589,6 +591,61 @@ template {
   line-height: 10px;
 }
 
+.ratting__sub {
+  bottom: 0;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 450px;
+  position: relative;
+  border-radius: 8px;
+}
+
+.swiper-container::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
+  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+  z-index: 10;
+}
+
+.slider {
+  width: 728px;
+}
+
+.slider-button {
+  z-index: 99;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+  background-color: transparent;
+}
+
+.slider-button--next {
+  right: 18px;
+  background-image: url(../img/arrow-next.svg);
+}
+
+.slider-button--prev {
+  left: 18px;
+  background-image: url(../img/arrow-prev.svg);
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -619,6 +676,9 @@ template {
   }
   .search__input {
     width: 340px;
+  }
+  .slider {
+    width: 100%;
   }
 }
 
@@ -690,20 +750,39 @@ template {
             order: -1;
     margin-left: 0;
   }
+  .slider {
+    width: 100%;
+  }
+  .swiper-slide {
+    width: 100%;
+    height: 100%;
+  }
+  .q {
+    max-width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
 @media (max-width: 576px) {
   .logo {
     width: 99px;
   }
-}
-
-@media (max-width: 320px) {
   .container {
     width: 88%;
   }
   .navbar-top {
     height: 70px;
+  }
+  .hotel {
+    padding-top: 0;
+  }
+  .swiper-container {
+    height: 179px;
+  }
+  .q {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
