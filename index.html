@@ -125,17 +125,17 @@
         <!-- /.hotel-info__ratting -->
       </div>
       <div class="hotel-grid">
-        <div class="slider">
+        <div class="slider hotel__slider">
           <!-- Slider main container -->
           <div class="swiper-container">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide"> <img src="img/slide 1.jpg" alt="Слайд" class="q" ></div>
-              <div class="swiper-slide"> <img src="img/slide 2.jpg" alt="Слайд" class="q" ></div>
-              <div class="swiper-slide"> <img src="img/slide 3.jpg" alt="Слайд" class="q" ></div>
-              <div class="swiper-slide"> <img src="img/slide 4.jpg" alt="Слайд" class="q" ></div>
-              <div class="swiper-slide"> <img src="img/slide 5.jpg" alt="Слайд" class="q" ></div>
+              <div class="swiper-slide"> <img src="img/slide 1.jpg" alt="Слайд" class="swiper-slide__image" ></div>
+              <div class="swiper-slide"> <img src="img/slide 2.jpg" alt="Слайд" class="swiper-slide__image" ></div>
+              <div class="swiper-slide"> <img src="img/slide 3.jpg" alt="Слайд" class="swiper-slide__image" ></div>
+              <div class="swiper-slide"> <img src="img/slide 4.jpg" alt="Слайд" class="swiper-slide__image" ></div>
+              <div class="swiper-slide"> <img src="img/slide 5.jpg" alt="Слайд" class="swiper-slide__image" ></div>
             </div>
             
             <!-- If we need navigation buttons -->
@@ -145,6 +145,47 @@
           <!-- /.swiper-container -->
         </div>
         <!-- /.slider -->
+        <div class="hotel-right">
+          <div class="booking">
+            <div class="booking__info">
+              <div class="booking__price">
+                <span class="booking__start">price starts as</span>
+                <strong class="booking__pricetag">$ 8,500</strong>
+                <span class="booking__per-room">per room / night</span>
+              </div>
+              <!-- /.booking__price -->
+              <div class="booking__room">
+                <div class="booking__text">
+                  <img src="img/user.svg" alt="Icon user" class="booking__icon">
+                  <span class="booking__description">2 x Guests</span>
+                </div>
+                <div class="booking__text">
+                  <img src="img/home.svg" alt="Icon home" class="booking__icon">
+                  <span class="booking__description">1 x Room</span>
+                </div>
+              </div>
+              <!-- /.booking__room -->
+            </div>
+            <!-- /.booking__info -->
+            <div class="booking__call-center">
+              <span class="booking__heading">Quick Booking</span>
+              <a class="booking__number" href="tel:12100">
+                <img src="img/phone-call.svg" alt="Icon: phone">
+                <span class="booking__num">12100</span>
+              </a>
+          
+            </div>
+            <!-- /.booking__call-center -->
+            <button class="button booking__button">View Other Options</button>
+          </div>
+          <!-- /.booking -->
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.0451020082587!2d55.741762514957635!3d25.669799583678625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef609943ef02e8b%3A0x8278dfaf4a758df4!2sDoubleTree%20by%20Hilton%20Resort%20%26%20Spa%20Marjan%20Island!5e0!3m2!1sru!2sru!4v1616704647961!5m2!1sru!2sru"
+              width="100%" height="213" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <!-- /.map -->
+        </div>
       </div>
       <!-- /.hotel-grid -->
     </div>
