@@ -8,6 +8,9 @@
         width: 100%
         height: 100%
         object-fit: cover
+  .card
+    width: 230px
+    height: 250px
 @media (max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -45,11 +48,33 @@
   .map
     width: 340px
   .reviews
+    &__title
+      font-style: normal
+      font-weight: bold
+      font-size: 30px
+      line-height: 38px
+      text-align: center
+      text-transform: uppercase
+      margin-bottom: 50px
     &-slider
       height: auto
       &__item
         max-width: 580px
-
+  .subscribe
+    margin: 0
+  .newsletter
+    &-title
+      margin: 0
+  .activities
+    &__title
+      margin-bottom: 57px
+    &-wrapper
+      flex-wrap: wrap
+    &__card
+      margin-bottom: 20px
+  .card
+    width: 340px
+    height: 230px
 @media (max-width: 767px)
   .container,
     max-width: 576px
@@ -111,13 +136,37 @@
     height: 173px
   .q
     height: 173px
+  .subscribe
+    margin: 0
   .newsletter
+    &-title
+      font-style: normal
+      font-weight: 300
+      font-size: 20px
+      line-height: 25px
+      margin: 0
+      margin-bottom: 37px
+      &__strong
+        font-style: normal
+        font-weight: 600
+        font-size: 30px
+        line-height: 38px
+        text-transform: uppercase
+
     &-wrapper
       flex-direction: column
       width: 92%
       max-width: 576px
       align-items: flex-start
   .reviews
+    &__title
+      margin-bottom: 50px
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      text-align: center
+      text-transform: uppercase
     &-slider
       height: auto
       &__item
@@ -128,18 +177,25 @@
         top: 32px
         &--prev
           left: 50%
-          margin-left: -65px
+          margin-left: -95px
           transform: translate(-50%, 0)
         &--next
           right: 50%
-          margin-right: -65px
+          margin-right: -95px
           transform: translate(50%, 0)
-
+  .activities
+    padding-top: 40px
+    padding-bottom: 60px
+    &__title
+      margin-bottom: 37px
+  .card
+    width: 49%
+    height: 255px
 @media  ( max-width: 576px  )
   .logo
     width: 99px
   .container
-    width: 88%
+    width: 87%
   .navbar
     &-top
       height: 70px
@@ -178,8 +234,14 @@
   .subscribe
     max-width: 280px
     max-height: 50px
+    &__input
+      padding-left: 20px
   .reviews
     &__title
+      margin: auto
+      max-width: 245px
+      margin-bottom: 42px
+      flex-wrap: wrap
       font-style: normal
       font-weight: bold
       font-size: 18px
@@ -188,4 +250,6 @@
       text-transform: uppercase
     &-slider
       height: auto
+  .card
+    width: 100%
 @media  ( max-width:320px  )
