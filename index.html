@@ -14,7 +14,7 @@
 </head>
 <body>
 
-  <header class="navbar">
+  <header class="navbar navbar--mobile_fixed">
     <div class="container">
       <div class="navbar-top">
         <a href="" class="logo">
@@ -23,7 +23,7 @@
                 class="logo__image">
         </a>
 
-        <form action="#" class="search navbar__search">
+        <form action="#" class="search navbar__search navbar__search--mobile__hidden">
           <input type="text" 
                 class="search__input"
                 placeholder="Search Location"/>
@@ -33,7 +33,7 @@
           </button>
         </form>
 
-        <a href="#" class="user navbar__user">
+        <a href="#" class="user navbar__user navbar__user--mobile__hidden">
           <img 
               src="img/user__avatar.jpeg"  
               alt="avatar: Nathan"
@@ -56,6 +56,22 @@
       <div class="container">
         <nav>
           <ul class="navbar-menu">
+            <li class="navbar-menu__item navbar-menu__item--mobile__visible">
+              <a href="#" class="user navbar__user navbar__user--mobile__visible">
+                <img src="img/user__avatar.jpeg" alt="avatar: Nathan" class="user__avatar" />
+                <span class="user__name user__name--light">Nathan</span>
+              </a>
+              <!-- /.user -->
+            </li>
+            <li class="navbar-menu__item navbar-menu__item--mobile__visible">
+              <form action="#" class="search navbar__search navbar__search--mobile__visible">
+                <input type="text" class="search__input" placeholder="Search Location" />
+              
+                <button class="search__button">
+                  <img src="img/search1.svg" alt="icon: search">
+                </button>
+              </form>
+            </li>
             <li class="navbar-menu__item">
               <a href="#" class="navbar-menu__link">All Deals</a>
             </li>
